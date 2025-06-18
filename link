@@ -1,4 +1,44 @@
+// components/OtpModal.js
+import React from 'react';
 
+export default function OtpModal({ show, onClose }) {
+  if (!show) return null;
+
+  return (
+    <div className="modal d-block" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+      <div className="modal-dialog modal-dialog-centered modal-sm modal-fullscreen-sm-down">
+        <div className="modal-content rounded-4">
+          <div className="modal-header">
+            <button type="button" className="btn btn-link" onClick={onClose}>
+              ←
+            </button>
+            <h5 className="modal-title text-center w-100">Confirmez votre numéro</h5>
+          </div>
+          <div className="modal-body text-center">
+            <p>Saisissez le code que vous avez reçu par email à <strong>e.exemple@gmail.com</strong></p>
+            <div className="d-flex justify-content-center mb-3 gap-2">
+              {[...Array(6)].map((_, idx) => (
+                <input
+                  key={idx}
+                  type="text"
+                  maxLength={1}
+                  className="form-control text-center"
+                  style={{ width: '40px', height: '50px', fontSize: '24px' }}
+                />
+              ))}
+            </div>
+            <button className="btn btn-secondary w-100 mt-3" disabled>
+              Continuer
+            </button>
+            <div className="mt-3">
+              <a href="#" className="text-decoration-underline">Choisissez une autre option</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // components/Header.js
 import React from 'react';
