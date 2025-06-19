@@ -1,3 +1,19 @@
+
+Topics to Prepare:
+	•	Angular Architecture (Modules, Components, Services)
+	•	Reactive vs Template-Driven Forms
+	•	RxJS operators (switchMap, mergeMap, concatMap, forkJoin, combineLatest)
+	•	NgRx/State Management Concepts (if applicable)
+	•	Dependency Injection
+	•	Routing with lazy loading
+	•	Lifecycle hooks (ngOnInit, ngOnChanges, etc.)
+	•	Signals (if you’re using Angular 16+)
+	•	Inter-component communication
+	•	ViewEncapsulation
+	•	Optimizing Angular apps for performance (Change Detection Strategies)
+	•	Angular Material / PrimeNG / DevExtreme (component usage)
+	•	Custom Pipes & Directives
+
 // components/OtpModal.js
 import React from 'react';
 
